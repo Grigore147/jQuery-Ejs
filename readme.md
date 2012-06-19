@@ -50,10 +50,11 @@ Download and include `./ejs.js` or `./ejs.min.js` and `jquery.ejs.js`.
 Create templates under public accessible directory, `/public/views/` as default or set other path in options.
 
 Get view instance:
+
     // Load view instance, accept an object for custom options
     var View = $.Ejs({ async: false });
 
-<hr/><hr/>
+<hr/>
 
 Template: 
 
@@ -69,7 +70,7 @@ Result:
 
     <h2>jQuery Ejs!!</h2>
 
-<hr/><hr/>
+<hr/>
 
 Template: 
 
@@ -91,7 +92,7 @@ Result:
     <h2>jQuery Ejs!!</h2>
     <p>Support for partials</p>
 
-<hr/><hr/>
+<hr/>
     
 Template:
 
