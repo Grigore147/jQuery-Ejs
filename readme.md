@@ -24,12 +24,11 @@
   * `callback` - callback for async calls
 
 * ### compile (template [, options, callback])
+  Compile template into a function. Return error or template fn.
 
-Compile template into a function. Return error or template fn.
+* ### partial (template [, data, options])
 
-* ### partial (template [, data, opts])
-
-This is actually a render call but with `async: false` so could be used in templates to render partials. For multiple calls will be much faster to use compiled templates.
+  This is actually a render call but with `async: false` so could be used in templates to render partials. For multiple calls will be much faster to use compiled templates.
 
 There are also few jQuery like methods.
 
@@ -122,6 +121,3 @@ Render:
 The MIT License
 
 Copyright © 2012 D.G. Shogun <Shogun147@gmail.com>
-
-
-
