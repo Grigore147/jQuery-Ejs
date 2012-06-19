@@ -61,9 +61,11 @@ Template:
     <h2><?-title?></h2>
 
 Render:
+
     var html = View.render('welcome', { title: 'jQuery Ejs!!' });
 
 Result: 
+
     <h2>jQuery Ejs!!</h2>
 
 ## 
@@ -71,16 +73,20 @@ Result:
 Template: 
 
 `/public/views/welcome.html`
+
     <h2><?-title?></h2>
     <?-View.partial('content', { message: 'Support for partials' })?>
 
 `/public/views/content.html`
+
     <p><?-message?></p>
 
 Render:
+
     var html = View.render('welcome', { title: 'jQuery Ejs!!' });
 
 Result: 
+
     <h2>jQuery Ejs!!</h2>
     <p>Support for partials</p>
 
@@ -89,6 +95,7 @@ Result:
 Template:
 
 `/public/views/teams.html`
+
     <h2>Top Football Teams</h2>
     <ul id="teams">
     <?teams.forEach(function(t){?>
@@ -97,9 +104,11 @@ Template:
     </ul>
 
 `/public/views/teams/team.html`
+
     <li><?-team.name?>, <?-team.country?></li>
 
 Render:
+
     var teams = [
       { name: 'Real Madrid', country: 'Spain' },
       { name: 'Barcelona', country: 'Spain' },
