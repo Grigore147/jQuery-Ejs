@@ -53,7 +53,7 @@ Get view instance:
     // Load view instance, accept an object for custom options
     var View = $.Ejs({ async: false });
 
-## 
+<hr/><hr/>
 
 Template: 
 
@@ -69,7 +69,7 @@ Result:
 
     <h2>jQuery Ejs!!</h2>
 
-## 
+<hr/><hr/>
 
 Template: 
 
@@ -91,7 +91,7 @@ Result:
     <h2>jQuery Ejs!!</h2>
     <p>Support for partials</p>
 
-## 
+<hr/><hr/>
     
 Template:
 
