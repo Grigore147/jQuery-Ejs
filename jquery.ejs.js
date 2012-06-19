@@ -1,5 +1,3 @@
-var ejs = require('ejs');
-
 if (!Object.create) {
 	Object.create = function(obj) {
 		function F() {}
@@ -10,6 +8,8 @@ if (!Object.create) {
 }
 
 $(function($){
+	var ejs = require('ejs');
+	
 	$.Ejs = function(options) {
 		var view = Object.create(EjsView);
 		
@@ -130,19 +130,14 @@ $(function($){
 			return html;
 		},
 
-		partial: function(template, data, opts, callback) {
+		partial: function(template, data, opts) {
 			var View = this;
-
-			if (typeof(opts) == 'function') {
-				callback = opts;
-				opts = {};
-			}
 
 			if (!opts) { opts = {}; }
 
 			opts.async = false;
 
-			return View.render(template, data, opts, callback);
+			return View.render(template, data, opts);
 		},
 
 		update: function(el, template, data, opts, callback) {
