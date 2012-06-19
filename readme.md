@@ -58,6 +58,7 @@ Get view instance:
 Template: 
 
 `/public/views/welcome.html`
+
     <h2><?-title?></h2>
 
 Render:
