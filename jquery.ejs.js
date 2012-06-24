@@ -99,6 +99,11 @@ $(function($){
 		render: function(template, data, opts, callback) {
 			var View = this;
 
+      if (typeof(data) == 'function') {
+	      callback = data;
+	      data = {};
+      }
+
 			if (typeof(opts) == 'function') {
 				callback = opts;
 				opts = {};
